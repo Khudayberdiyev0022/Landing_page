@@ -1,0 +1,261 @@
+/* Khusan Juraev Start */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Mulish', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p,
+a,
+span {
+    font-family: 'Mulish', sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+    transition: .2s ease;
+}
+
+header {
+    background-color: #EFF4FF;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.fw-bolder-custom{
+    /* font-weight: 800; */
+}
+
+.navbar-icons a {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.banner {
+    /* background-image: url("../img/banner-bg.jpg"); */
+    background-image: linear-gradient(to right, #FFFFFF
+    , #BBCDFA);
+    /* background: linear-gradient(267.31deg, #BBCDFA 1.27%, rgba(255, 255, 255, 0) 179.03%); */
+    background-position: bottom;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    /* background-color: rgba(10, 42, 67, 0.85); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.banner-info {
+    padding-bottom: 150px;
+}
+
+.banner img {
+    bottom: 0;
+    transform: translateY(1px);
+}
+
+.banner .banner-img {
+    background-image: url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    right: 0;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+/* .premium{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+} */
+
+.premium .steps .step-item {
+    max-width: 180px;
+    height: 180px;
+}
+
+.information {
+    background-color: #024592;
+    z-index: 10000;
+}
+
+.information:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 316px;
+    z-index: -1;
+    height: 300px;
+    background: url("../img/ellipse.svg");
+    transform: translate(10px, 10px);
+}
+
+.information:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 316px;
+    z-index: -1;
+    height: 300px;
+    background: url("../img/ellipse.svg");
+    transform: translate(10px, 10px);
+}
+
+.our-academy-text:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 1000px;
+    width: 150px;
+    z-index: -1;
+    height: 160px;
+    background: url("../img/ellipseMin.svg");
+    transform: translate(10px, 10px);
+}
+
+.our-academy-text:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 750px;
+    width: 150px;
+    z-index: -1;
+    height: 160px;
+    background: url("../img/ellipseMin.svg");
+    transform: translate(10px, 10px);
+}
+
+.reviews-title:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../img/quote.svg");
+    height: 100px;
+    width: 117px;
+    transform: translate(-80px, -110px);
+}
+
+.reviews-info:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../img/mini-quote.png");
+    width: 16px;
+    height: 14px;
+    transform: translate(-20px, -20px);
+}
+
+footer {
+    background-color: #EFF4FF;
+}
+
+footer .footer-input input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #fff;
+    padding: 7px 0;
+    outline: none;
+    color: #fff
+}
+
+.footer-list li {
+    list-style: none;
+    margin: 5px 20px;
+}
+
+.footer-list {
+    width: 240px;
+}
+
+/* Khusan Juraev End */
+
+/* Media ========================================= */
+
+@media (max-width: 1200px) {
+    .academy-img{
+        position: absolute;
+
+    }
+    
+    .mb-4{
+        text-align: center;
+    }
+    .col-4 {
+        max-width: 361px;
+        margin: 0 auto;
+        overflow: hidden;
+        flex: none;
+    }
+    .col-6 {
+        /* margin: 0 auto; */
+    }
+    .academy-text{
+        margin: 0 auto;
+    }
+    .col-6__text{
+        text-align: center;
+    }
+    .mt-4 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* @media (max-width: 991px) {
+    .premium .steps .step-item {
+        max-width: none;
+        margin: 0 auto;
+    }
+
+    .steps-item__text {
+        max-width: auto;
+    }
+
+    .col-4 {
+        max-width: 361px;
+        margin: 0 auto;
+        overflow: hidden;
+        flex: none;
+    }
+
+    .col-6 {
+        margin: 0 auto;
+    }
+    .col-6__text{
+        text-align: center;
+    }
+
+    .mt-4 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media(max-width: 767px) {
+    .premium .steps .step-item {
+        max-width: 180px;
+        margin: 0 auto;
+    }
+} */
